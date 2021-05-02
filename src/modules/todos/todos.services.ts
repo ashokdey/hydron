@@ -16,6 +16,7 @@ export class TodoServices {
       const todoRepository = await getRepository(TodoEntity);
       return todoRepository.find();
     } catch (error) {
+      // eslint-disable-next-line no-console
       console.error(error);
     }
   }
